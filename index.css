@@ -1,0 +1,82 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('https://tse4.mm.bing.net/th/id/OIP.2g-oYNA_UiJukxmsYum5XgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* Basic styling for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adds space between each link */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Media query for screens smaller than 768px (like tablets or phones) */
+@media screen and (max-width: 768px) {
+  /* Make the navigation links stack vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+  }
+
+  /* Adjust the spacing and appearance for smaller screens */
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+nav ul li a:hover {
+  color: #737070;
+  background-color: #444;
+  padding: 2px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
